@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "machines",
+  "info": {
+    "singularName": "machine",
+    "pluralName": "machines",
+    "displayName": "machine"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "machineTitle": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "machineManufacturedDate": {
+      "type": "date"
+    },
+    "machineSummary": {
+      "type": "richtext",
+      "required": true
+    },
+    "machineImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "machineContent": {
+      "type": "richtext"
+    }
+  }
+}
